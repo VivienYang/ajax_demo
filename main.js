@@ -1,5 +1,7 @@
 my_xml.addEventListener('click',function(){
     let request = new XMLHttpRequest()
+    request.open('POST','/xxx/xml')//配置request
+    request.send()
     request.onreadystatechange=function(){
         console.log(request.readyState)
         if(request.readyState===4){
@@ -19,11 +21,11 @@ my_xml.addEventListener('click',function(){
             }
         }
     }
-    request.open('POST','/xxx/xml')//配置request
-    request.send()
 })
 my_json.addEventListener('click',function(){
     let request = new XMLHttpRequest()
+    request.open('POST','/xxx/json')//配置request
+    request.send()
     request.onreadystatechange=function(){
         console.log(request.readyState)
         if(request.readyState===4){
@@ -47,6 +49,4 @@ my_json.addEventListener('click',function(){
             }
         }
     }
-    request.open('POST','/xxx/json')//配置request
-    request.send()
 })
