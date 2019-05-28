@@ -26,6 +26,7 @@ response.setHeader('Access-Control-Allow-Origin',*)
 ##### 浏览器必须保证
 1. 只有 协议+端口+域名 一模一样才允许发 AJAX 请求
 2. CORS 可以告诉浏览器，我俩一家的，别阻止他
+
 #### 原生js发送ajax
 ```
 let request = new XMLHttpRequest()  //step1:new一个XMLHttpRequest对象

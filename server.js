@@ -29,6 +29,7 @@ var server = http.createServer(function(request, response){
   else if(path === '/xxx/xml'){//返回符合xml格式的字符串
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/xml;charset=utf-8')
+    response.setHeader('Access-Control-Allow-Origin','http://frank.com:8001')
     response.write(`
     <note>
     <to>Tove</to>
@@ -42,6 +43,7 @@ var server = http.createServer(function(request, response){
   else if(path === '/xxx/json'){//返回符合json格式的字符串
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/json;charset=utf-8')
+    response.setHeader('Access-Control-Allow-Origin','http://frank.com:8001')
     response.write(`
     {
         "note":{

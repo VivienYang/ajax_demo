@@ -1,6 +1,6 @@
 my_xml.addEventListener('click',function(){
     let request = new XMLHttpRequest()
-    request.open('POST','/xxx/xml')//配置request
+    request.open('POST','http://jack.com:8002/xxx/xml')//配置request
     request.send()
     request.onreadystatechange=function(){
         console.log(request.readyState)
@@ -24,7 +24,7 @@ my_xml.addEventListener('click',function(){
 })
 my_json.addEventListener('click',function(){
     let request = new XMLHttpRequest()
-    request.open('POST','/xxx/json')//配置request
+    request.open('POST','http://jack.com:8002/xxx/json')//配置request
     request.send()
     request.onreadystatechange=function(){
         console.log(request.readyState)
